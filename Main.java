@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -15,10 +14,11 @@ public class Main {
         }
         int [] oneToHundred = new int[number];
         for(int i = 0; i < number; i++) {
-            oneToHundred[i] = i;
+            oneToHundred[i] = i + 1;
+
         }
-        for(int i = 0; i <= number; i++) {
-            System.out.println(i + " ");
+        for(int i = 0; i <= number - 1; i++) {
+            System.out.println(oneToHundred[i]);
         }
     }
 }
